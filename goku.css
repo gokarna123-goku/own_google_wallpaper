@@ -130,7 +130,7 @@ li{
 
 /* Glowing Animation */
 @keyframes dimToLight {
-    0% {
+    /* 0% {
         text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.9);
     }
     25% {
@@ -144,6 +144,22 @@ li{
     }
     100% {
         text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.8);
+    } */
+    
+    0% {
+        text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.9);
+    }
+    25% {
+        text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.8);
+    }
+    50% {
+        text-shadow: 0px 0px 15px rgba(149, 19, 225, 0.6);
+    }
+    75% {
+        text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.7);
+    }
+    100% {
+        text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.8);
     }
 }
 
@@ -216,7 +232,6 @@ li{
     background: #313131;
     margin: 2rem 0;
 }
-
 
 /* Useful Sites */
 .useful_sites{
