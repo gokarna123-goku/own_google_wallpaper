@@ -130,7 +130,7 @@ li{
 
 /* Glowing Animation */
 @keyframes dimToLight {
-    /* 0% {
+    0% {
         text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.9);
     }
     25% {
@@ -144,9 +144,9 @@ li{
     }
     100% {
         text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.8);
-    } */
+    }
     
-    0% {
+    /* 0% {
         text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.9);
     }
     25% {
@@ -160,7 +160,7 @@ li{
     }
     100% {
         text-shadow: 0px 0px 15px rgba(255, 4, 226, 0.8);
-    }
+    } */
 }
 
 /* Social Links */
