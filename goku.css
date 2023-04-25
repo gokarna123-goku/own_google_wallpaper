@@ -233,7 +233,7 @@ li{
     color: #717171;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .site_lists{
     width: 100%;
@@ -241,7 +241,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    gap: 1.7rem;
 }
 .site_link{
     color: #717171;
