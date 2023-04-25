@@ -1,0 +1,286 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Main Section */
+.main_section{
+    width: 100%;
+    height: 100vh;
+    background: #171717;
+}
+.nav_section{
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+    border: 1px solid rgba(143, 143, 143, 0.07);
+    box-shadow: 0px 1px 10px rgba(143, 143, 143, 0.01);
+    padding: 12px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile_section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 1rem;
+    border-radius: 6px;
+}
+.my_pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0.3px 0.3px 10px rgba(19, 201, 225, 0.9);
+}
+.my_info_section{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 0.31rem;
+}
+.fullname{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #d0d0d0;
+    letter-spacing: 0.1rem;
+}
+.position{
+    font-size: 1.05rem;
+    color: #717171;
+}
+
+.nav_list_section{
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+}
+.nav_list_section ul{
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+}
+.nav_list_section li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #878787;
+    transition: 0.5s ease-in;
+}
+.nav_list_section li a:hover{
+    color: #13c9e1;
+}
+.nav_list_section li .active{
+    color: #13c9e1;
+}
+.discord_btn{
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid #13c9e1;
+    color: #878787;
+    cursor: pointer;
+    transition: 0.5s ease-in
+}
+.discord_btn:hover{
+    color: #13c9e1;
+}
+
+/* Hero Section */
+.hero_section{
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.my_passion{
+    font-size: 6rem;
+    font-weight: bold;
+    color: #13c9e1;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    animation: dimToLight 1s ease-in infinite;
+    margin-bottom: 3rem;
+}
+
+/* Glowing Animation */
+@keyframes dimToLight {
+    0% {
+        text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.9);
+    }
+    25% {
+        text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.8);
+    }
+    50% {
+        text-shadow: 0px 0px 15px rgba(149, 19, 225, 0.6);
+    }
+    75% {
+        text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.7);
+    }
+    100% {
+        text-shadow: 0px 0px 15px rgba(19, 201, 225, 0.8);
+    }
+}
+
+/* Social Links */
+.follow_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+}
+.follow_title{
+    font-size: 2.0rem;
+    color: #717171;
+    margin-bottom: 3.8rem;
+}
+.my_social_links ul{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.my_social_links ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+.my_social_links ul li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 6px;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+.my_social_links ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    /* background: #ffee10; */
+    background: #13c9e1;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+.my_social_links ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #13c9e1;
+}
+.my_social_links ul li a:hover {
+    color: #13c9e1;
+    box-shadow: 0 0 5px #13c9e1;
+    text-shadow: 0 0 5px #13c9e1;
+}
+
+/* Divider */
+.divider_section{
+    width: 100%;
+    height: 1px;
+    background: #313131;
+    margin: 2rem 0;
+}
+
+
+/* Useful Sites */
+.useful_sites{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.useful_site_title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #717171;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.site_lists{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.site_link{
+    color: #717171;
+}
+.site_box{
+    width: auto;
+    height: auto;
+    padding: 7px 15px;
+    border: 2px solid #13c9e1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.site_box:hover{
+    box-shadow: 0px 0px 5px #13c9e1;
+}
+.site_icon{
+    width: 50px;
+    height: 50px;
+}
+.site_detail{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 0.3rem;
+}
+.site_title{
+    font-size: 1.2rem;
+    color: #878787;
+}
+.site_desc{
+    font-size: 0.87rem;
+    color: #717171;
+}
+
+
+
+
+/* End */
