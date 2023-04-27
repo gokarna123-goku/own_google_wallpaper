@@ -242,20 +242,26 @@ li{
     justify-content: center;
     flex-direction: column;
 }
+.useful_site_title_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .useful_site_title{
     font-size: 1.5rem;
     font-weight: 500;
     color: #717171;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
 }
 .site_lists{
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 1.5rem;
     row-gap: 2rem;
