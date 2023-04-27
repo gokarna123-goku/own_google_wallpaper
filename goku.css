@@ -255,8 +255,8 @@ li{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.7rem;
+    justify-content: space-between;
+    row-gap: 2rem;
 }
 .site_link{
     color: #717171;
